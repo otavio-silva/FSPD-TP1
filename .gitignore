@@ -1,6 +1,9 @@
 #VSCode files
 .vscode
 
+#log files
+#.log
+
 # Prerequisites
 *.d
 
