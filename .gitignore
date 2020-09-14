@@ -2,7 +2,7 @@
 .vscode
 
 #log files
-#.log
+*.log
 
 # Prerequisites
 *.d
