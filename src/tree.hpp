@@ -116,7 +116,6 @@ template<typename T> node<T> *tree<T>::__insert(node<T> *root, T data, unsigned 
 {
 	if (root == nullptr)
 		return new node<T>(data, key);
-	
 	if (root->get_key() == key)
 		throw std::invalid_argument("Key already exists");
 	else if (key > root->get_key())
