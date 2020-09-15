@@ -25,7 +25,7 @@ template<typename T> class tree
 		tree(T, unsigned);
 		void insert(T, unsigned);
 		void remove(unsigned);
-		T operator[](const unsigned) const;
+		const T operator[](const unsigned) const;
 		~tree();
 };
 
@@ -240,7 +240,7 @@ template<typename T> void tree<T>::remove(unsigned key)
 		throw std::invalid_argument("Key does not exist");
 }
 
-template<typename T> T tree<T>::operator[](const unsigned key) const
+template<typename T> const T tree<T>::operator[](const unsigned key) const
 {
 	return search_value(this->root, key);
 }
